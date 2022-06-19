@@ -113,7 +113,7 @@ git push -u origin main
 
 Code developed for the Docker migration can be found in [this commit](https://github.com/hdr1001/ghcs-cheat-sheets/commit/4763b7fa99740185f818e1f8291559aa5e0dceae).
 
-The following command build, run &amp; verify the Docker image/container:
+The following commands build, run, verify &amp; cleanup the Docker image/container:
 
 ```sh
 cd ~/Documents/dev/ghcs-cheat-sheets

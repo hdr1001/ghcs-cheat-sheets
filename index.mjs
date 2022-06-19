@@ -2,10 +2,10 @@ import express from 'express';
 
 const app = express();
 
-const port = 3003;
+const port = 3001;
 
 app.get('/', (req, res) => {
-  res.send('My cheat cheets hosted on GitHub Codespaces')
+  res.send('My cheat sheets hosted on GitHub Codespaces')
 });
 
 app.listen(port, () => {
