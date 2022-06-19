@@ -4,7 +4,8 @@
   "description": "The GitHub Codespaces version of my cheat sheets",
   "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   "start": "node index.mjs",
+   "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "GitHub",
