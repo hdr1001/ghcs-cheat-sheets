@@ -108,3 +108,20 @@ git remote add origin https://github.com/hdr1001/ghcs-cheat-sheets.git
 git branch -M main
 git push -u origin main
 ```
+
+#### _Application migration to Docker container_
+
+Code developed for the Docker migration can be found in [this commit](https://github.com/hdr1001/ghcs-cheat-sheets/commit/4763b7fa99740185f818e1f8291559aa5e0dceae).
+
+The following command build, run &amp; verify the Docker image/container:
+
+```sh
+cd ~/Documents/dev/ghcs-cheat-sheets
+docker build -t $USER/cheat-sheets .
+docker run -p 3003:3003 -d $USER/cheat-sheets
+docker ps
+docker logs <CONTAINER ID>
+Open [http://localhost:3003](http://localhost:3003)
+docker stop <CONTAINER ID>
+docker system prune -a
+```
